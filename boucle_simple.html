@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(()=>{setTimeout(()=>{const{markmap:S,mm:Q}=window,$=new S.Toolbar;$.attach(Q);const I=$.render();I.setAttribute("style","position:absolute;bottom:20px;right:20px"),document.body.append(I)})})()</script><script>((l,U,M,R)=>{const N=l();window.mm=N.Markmap.create("svg#mindmap",(U||N.deriveOptions)(R),M),window.matchMedia("(prefers-color-scheme: dark)").matches&&document.documentElement.classList.add("markmap-dark")})(()=>window.markmap,null,{"content":"boucle_simple.js","children":[{"content":"var i = 1;","children":[{"content":"D&#xe9;clare une variable <code>i</code> et l&apos;initialise &#xe0; 1","children":[],"payload":{"tag":"li","lines":"2,3"}},{"content":"Type implicite : <code>number</code> (JavaScript inf&#xe8;re le type)","children":[],"payload":{"tag":"li","lines":"3,5"}}],"payload":{"tag":"h2","lines":"1,2"}},{"content":"while(i&lt;2) {","children":[{"content":"console.log(i);","children":[{"content":"Affiche la valeur de <code>i</code> dans la console","children":[],"payload":{"tag":"li","lines":"10,11"}},{"content":"Sortie visible : <code>1</code>","children":[],"payload":{"tag":"li","lines":"11,13"}}],"payload":{"tag":"h3","lines":"9,10"}},{"content":"i++;","children":[{"content":"Incr&#xe9;mente <code>i</code> de 1 (<code>i = i + 1</code>)","children":[],"payload":{"tag":"li","lines":"14,15"}},{"content":"Permet la sortie de la boucle au prochain test","children":[],"payload":{"tag":"li","lines":"15,17"}}],"payload":{"tag":"h3","lines":"13,14"}}],"payload":{"tag":"h2","lines":"5,6"}},{"content":"}","children":[{"content":"Fin de la boucle <code>while</code>","children":[],"payload":{"tag":"li","lines":"18,19"}}],"payload":{"tag":"h2","lines":"17,18"}}],"payload":{"tag":"h1","lines":"0,1"}},null)</script>
+</body>
+</html>
