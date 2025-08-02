@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(()=>{setTimeout(()=>{const{markmap:S,mm:Q}=window,$=new S.Toolbar;$.attach(Q);const I=$.render();I.setAttribute("style","position:absolute;bottom:20px;right:20px"),document.body.append(I)})})()</script><script>((l,U,M,R)=>{const N=l();window.mm=N.Markmap.create("svg#mindmap",(U||N.deriveOptions)(R),M),window.matchMedia("(prefers-color-scheme: dark)").matches&&document.documentElement.classList.add("markmap-dark")})(()=>window.markmap,null,{"content":"<pre data-lines=\"0,20\"><code data-lines=\"0,20\"><span class=\"hljs-keyword\">import</span> express <span class=\"hljs-keyword\">from</span> <span class=\"hljs-string\">&quot;express&quot;</span>;\n<span class=\"hljs-keyword\">const</span> app = <span class=\"hljs-title function_\">express</span>();\n\napp.<span class=\"hljs-title function_\">get</span>(<span class=\"hljs-string\">&quot;/&quot;</span>, <span class=\"hljs-function\">(<span class=\"hljs-params\">req, res</span>) =&gt;</span> {\n  res.<span class=\"hljs-title function_\">send</span>(<span class=\"hljs-string\">&quot;&lt;h1&gt;Welcome to the homepage!&lt;/h1&gt;&quot;</span>);\n});\n\napp.<span class=\"hljs-title function_\">get</span>(<span class=\"hljs-string\">&quot;/about&quot;</span>, <span class=\"hljs-function\">(<span class=\"hljs-params\">req, res</span>) =&gt;</span> {\n  res.<span class=\"hljs-title function_\">send</span>(<span class=\"hljs-string\">&quot;&lt;h1&gt;About us&lt;/h1&gt;&quot;</span>);\n});\n\napp.<span class=\"hljs-title function_\">use</span>(<span class=\"hljs-function\">(<span class=\"hljs-params\">req, res</span>) =&gt;</span> {\n  res.<span class=\"hljs-title function_\">status</span>(<span class=\"hljs-number\">404</span>).<span class=\"hljs-title function_\">send</span>(<span class=\"hljs-string\">&quot;&lt;h1&gt;Page not found&lt;/h1&gt;&quot;</span>);\n});\n\napp.<span class=\"hljs-title function_\">listen</span>(<span class=\"hljs-number\">3000</span>, <span class=\"hljs-function\">() =&gt;</span> {\n  <span class=\"hljs-variable language_\">console</span>.<span class=\"hljs-title function_\">log</span>(<span class=\"hljs-string\">&quot;Server running at http://localhost:3000/&quot;</span>);\n});\n</code></pre>","children":[],"payload":{"tag":"pre","lines":"0,20"}},null)</script>
+</body>
+</html>
