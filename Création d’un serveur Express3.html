@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(()=>{setTimeout(()=>{const{markmap:S,mm:Q}=window,$=new S.Toolbar;$.attach(Q);const I=$.render();I.setAttribute("style","position:absolute;bottom:20px;right:20px"),document.body.append(I)})})()</script><script>((l,U,M,R)=>{const N=l();window.mm=N.Markmap.create("svg#mindmap",(U||N.deriveOptions)(R),M),window.matchMedia("(prefers-color-scheme: dark)").matches&&document.documentElement.classList.add("markmap-dark")})(()=>window.markmap,null,{"content":"index.js","children":[{"content":"Code :","children":[{"content":"<pre data-lines=\"3,13\"><code data-lines=\"3,13\"><span class=\"hljs-keyword\">import</span> express <span class=\"hljs-keyword\">from</span> <span class=\"hljs-string\">&quot;express&quot;</span>;\n\n<span class=\"hljs-keyword\">const</span> app = <span class=\"hljs-title function_\">express</span>();\n<span class=\"hljs-keyword\">const</span> port = <span class=\"hljs-number\">3000</span>;\n\napp.<span class=\"hljs-title function_\">listen</span>(port, <span class=\"hljs-function\">() =&gt;</span> {\n  <span class=\"hljs-variable language_\">console</span>.<span class=\"hljs-title function_\">log</span>(<span class=\"hljs-string\">`Server running on port <span class=\"hljs-subst\">&#x24;{port}</span>.`</span>);\n});\n</code></pre>","children":[],"payload":{"tag":"pre","lines":"3,13"}}],"payload":{"tag":"h2","lines":"2,3"}},{"content":"Code : import express from &quot;express&quot;;","children":[{"content":"<svg width=\"16\" height=\"16\" viewBox=\"0 -3 24 24\"><path fill-rule=\"evenodd\" d=\"M6 5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1zM3 6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-5z\" clip-rule=\"evenodd\"/></svg> Importe le module <code>express</code>, un framework web minimaliste pour Node.js.","children":[],"payload":{"tag":"h3","lines":"16,17"}}],"payload":{"tag":"h2","lines":"15,16"}},{"content":"Code : const app = express();","children":[{"content":"<svg width=\"16\" height=\"16\" viewBox=\"0 -3 24 24\"><path fill-rule=\"evenodd\" d=\"M6 5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1zM3 6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-5z\" clip-rule=\"evenodd\"/></svg> Cr&#xe9;e une instance de l&apos;application Express, qui sera utilis&#xe9;e pour d&#xe9;finir les routes et configurer le serveur.","children":[],"payload":{"tag":"h3","lines":"19,20"}}],"payload":{"tag":"h2","lines":"18,19"}},{"content":"Code : const port = 3000;","children":[{"content":"<svg width=\"16\" height=\"16\" viewBox=\"0 -3 24 24\"><path fill-rule=\"evenodd\" d=\"M6 5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1zM3 6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-5z\" clip-rule=\"evenodd\"/></svg> D&#xe9;finit le num&#xe9;ro de port sur lequel le serveur &#xe9;coutera les requ&#xea;tes entrantes (ici, le port 3000).","children":[],"payload":{"tag":"h3","lines":"22,23"}}],"payload":{"tag":"h2","lines":"21,22"}},{"content":"Code : app.listen(port, () =&gt; {","children":[{"content":"<svg width=\"16\" height=\"16\" viewBox=\"0 -3 24 24\"><path fill-rule=\"evenodd\" d=\"M6 5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1zM3 6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-5z\" clip-rule=\"evenodd\"/></svg> Lance le serveur Express et commence &#xe0; &#xe9;couter sur le port sp&#xe9;cifi&#xe9;.","children":[],"payload":{"tag":"h3","lines":"25,26"}},{"content":"<svg width=\"16\" height=\"16\" viewBox=\"0 -3 24 24\"><path fill-rule=\"evenodd\" d=\"M6 5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1zM3 6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-5z\" clip-rule=\"evenodd\"/></svg> Accepte une fonction de rappel (callback) &#xe0; ex&#xe9;cuter une fois que le serveur est d&#xe9;marr&#xe9;.","children":[],"payload":{"tag":"h3","lines":"26,27"}},{"content":"Code : console.log(<code>Server running on port &#x24;{port}.</code>);","children":[{"content":"<svg width=\"16\" height=\"16\" viewBox=\"0 -3 24 24\"><path fill-rule=\"evenodd\" d=\"M6 5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1zM3 6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-5z\" clip-rule=\"evenodd\"/></svg> Affiche un message dans la console pour confirmer que le serveur est en cours d&apos;ex&#xe9;cution sur le port d&#xe9;fini.","children":[],"payload":{"tag":"h4","lines":"29,30"}}],"payload":{"tag":"h3","lines":"28,29"}},{"content":"Code : });","children":[{"content":"<svg width=\"16\" height=\"16\" viewBox=\"0 -3 24 24\"><path fill-rule=\"evenodd\" d=\"M6 5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1zM3 6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-5z\" clip-rule=\"evenodd\"/></svg> Fin de la d&#xe9;finition de la fonction de rappel pour <code>app.listen</code>.","children":[],"payload":{"tag":"h4","lines":"32,33"}}],"payload":{"tag":"h3","lines":"31,32"}}],"payload":{"tag":"h2","lines":"24,25"}}],"payload":{"tag":"h1","lines":"0,1"}},null)</script>
+</body>
+</html>
